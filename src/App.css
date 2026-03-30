@@ -1,0 +1,64 @@
+.page-header {
+  margin: 24px;
+  font-size: 40px;
+}
+
+.forecast-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 24px;
+}
+
+.forecast-title {
+  font-weight: bold;
+  font-family: monospace;
+  margin: 16px;
+}
+
+.forecast {
+  width: 170px;
+  height: 170px;
+  padding: 8px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.forecast:first-child {
+  transform: scale(1.1);
+  box-shadow: #000 4px 2px 2px;
+}
+
+.forecast:hover {
+  box-shadow: #000 4px 2px 2px;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.forecast-day {
+  background-color: cornflowerblue;
+  color: #08060d;
+}
+
+.forecast-night {
+  background-color: #08060d;
+  color: cornflowerblue;
+}
+
+.forecast-content {
+  min-height: 100%;
+}
+
+.forecast-content > * {
+  margin-bottom: 12px;
+}
+
+.forecast-title {
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 8px;
+}
+
+.forecast-content:open .forecast-title {
+  font-size: large;
+}
